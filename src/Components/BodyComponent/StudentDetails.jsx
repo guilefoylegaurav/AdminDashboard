@@ -10,7 +10,7 @@ import { useStyles } from "./BodyStyles";
 
 
 
-export default function StudentList() {
+export default function StudentDetails() {
   const classes = useStyles();
   const [textValue, setTextValue] = useState("");
 

@@ -5,9 +5,9 @@ import { useStyles } from "./HeaderStyle";
 import NavbarComponent from "./NavbarComponent";
 import Sidenav from "./Sidenav";
 import Notification from "./ActionTab/Notification";
-import BlogPost from "../BodyComponent/StudentList";
+import BlogPost from "../BodyComponent/StudentDetails";
 import Dashboard from "../BodyComponent/Dashboard/Dashboard";
-import StudentList from "../BodyComponent/StudentList";
+import StudentDetails from "../BodyComponent/StudentDetails";
 import SignUp from "../BodyComponent/Auth/Signup";
 import SignIn from "../BodyComponent/Auth/SignIn";
 
@@ -34,7 +34,7 @@ export default function HearderComponent() {
       <Box className={classes.wrapper}>
         <Switch>
           <Route exact path='/' render={() => <Dashboard />} />
-          <Route exact path='/details' render={() => <StudentList />} />
+          <Route exact path='/details' render={() => <StudentDetails />} />
           <Route exact path='/signup' render={() => <SignUp />} />
           <Route exact path='/signin' render={() => <SignIn />} />
           <Route exact path='/notification' render={() => <Notification />} />
