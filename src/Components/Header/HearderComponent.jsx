@@ -8,6 +8,8 @@ import Notification from "./ActionTab/Notification";
 import BlogPost from "../BodyComponent/StudentList";
 import Dashboard from "../BodyComponent/Dashboard/Dashboard";
 import StudentList from "../BodyComponent/StudentList";
+import SignUp from "../BodyComponent/Auth/Signup";
+import SignIn from "../BodyComponent/Auth/SignIn";
 
 export default function HearderComponent() {
   const classes = useStyles();
@@ -33,7 +35,8 @@ export default function HearderComponent() {
         <Switch>
           <Route exact path='/' render={() => <Dashboard />} />
           <Route exact path='/details' render={() => <StudentList />} />
-          
+          <Route exact path='/signup' render={() => <SignUp />} />
+          <Route exact path='/signin' render={() => <SignIn />} />
           <Route exact path='/notification' render={() => <Notification />} />
         </Switch>
       </Box>
