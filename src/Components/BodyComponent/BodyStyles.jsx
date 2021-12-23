@@ -160,3 +160,33 @@ export const useStyles = makeStyles((theme) => ({
     
   }
 }));
+
+
+export const formStyles = makeStyles((theme) => ({
+
+  formContainer:
+  {
+    paddingTop:theme.spacing(4)
+  }, 
+  mainContainer:
+  {
+    marginTop:"10vh"
+  }, 
+  inputFieldContainer:
+  {
+    paddingBottom:theme.spacing(2)
+  }, 
+  buttonContainer:
+  {
+    paddingTop: theme.spacing(2), 
+    paddingBottom: theme.spacing(2)
+  }, 
+  baseTag:
+  {
+    paddingTop: theme.spacing(1), 
+    paddingBottom: theme.spacing(2)
+  }
+
+
+  
+}));
