@@ -11,15 +11,9 @@ import {
   Typography,
   
 } from "@material-ui/core";
-import { blue, green, lightBlue, red, teal } from "@material-ui/core/colors";
-import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
+
 import { useStyles } from "../BodyStyles";
-import GraphComponent from "../../../Common/GraphComponent";
-import BlogGraph from "./BlogGraph";
-import Section3 from "./Section3";
-import { fakeArrayGenrator } from "../../../Common/fakeDataGenetator";
-import { PageHeader } from "../../../Common/Components";
+
 import Pagination from '@material-ui/lab/Pagination';
 import { NavLink } from "react-router-dom";
 const Dashboard = () => 
@@ -45,7 +39,7 @@ const Dashboard = () =>
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary" component = {NavLink} to = "/blog">
+                    <Button size="small" color="primary" component = {NavLink} to = "/details">
                       View
                     </Button>
                     

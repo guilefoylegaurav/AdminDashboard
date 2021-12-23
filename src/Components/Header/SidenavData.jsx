@@ -20,13 +20,6 @@ export default function SidenavData({ handleDrawerClose }) {
   const classes = useStyles();
   const listItemData = [
     { label: "Dashboard", link: "/", icon: <DashboardIcon /> },
-    // { label: "Blog Post", link: "/blog", icon: <BookIcon /> },
-    {
-      label: "Notifications",
-      link: "/notification",
-      icon: <NotificationsActiveIcon />,
-    },
-    {label:"Settings", link:"/settings", icon:<Settings/>}, 
     { label: "logout", link: "/logout", icon: <ExitToAppIcon /> },
   ];
 
