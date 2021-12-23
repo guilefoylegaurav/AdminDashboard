@@ -23,22 +23,24 @@ export default function StudentList() {
   return (
 
 
-    <Container maxWidth="lg" className={classes.formCard}>
+    <Container maxWidth="sm" className={classes.formCard}>
+       <Paper>
       <Grid container justifyContent="center">
-        <Grid item md={6} xs={12}>
-          <Paper>
+        <Grid item md={9} xs={12}>
+         
             <Grid container justifyContent="center">
               <Grid item xs={12}>
                 <Typography variant="h6" className={classes.studentName}>Glenn Bluecod</Typography>
               </Grid>
 
-              <div>
-                <TextField fullWidth id="outlined-basic" label="Course Code" variant="outlined" className={classes.courseForm} />
+              <Grid item xs = {12} className={classes.inputContainer}>
+              <TextField fullWidth id="outlined-basic" label="Course Code" variant="outlined" className={classes.courseForm} />
+              </Grid>
+                
 
-
+              <Grid item xs = {12} className={classes.inputContainer}>
                 <TextField fullWidth id="outlined-basic" label="Course Name" variant="outlined" className={classes.courseForm} />
-
-              </div>
+                </Grid>
               <Grid item xs={12}>
                 <Grid container justifyContent="center" className={classes.courseButton}>
                   <Button fullWidth variant="contained" color="primary">
@@ -68,13 +70,13 @@ export default function StudentList() {
 
 
             </Grid>
-          </Paper>
+         
         </Grid>
 
       </Grid>
 
 
-
+      </Paper>
 
     </Container>
 

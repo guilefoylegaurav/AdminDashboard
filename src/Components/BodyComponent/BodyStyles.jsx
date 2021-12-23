@@ -27,14 +27,12 @@ export const useStyles = makeStyles((theme) => ({
   courseForm:
   {
    
-    marginTop:theme.spacing(5), 
+   
   }, 
   formCard:
   {
-    paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(8),
-    paddingLeft: theme.spacing(5), 
-    paddingRight: theme.spacing(5)
+    paddingTop: theme.spacing(10)
+    
   },
   // dashboard
   cardGrid: {
@@ -53,10 +51,16 @@ export const useStyles = makeStyles((theme) => ({
   },
   courseButton:
   {
-    paddingTop: theme.spacing(5), 
-    paddingLeft:theme.spacing(9),
-    paddingRight: theme.spacing(9),
-    paddingBottom: theme.spacing(5), 
+    
+    padding: theme.spacing(2), 
+
+
+  }, 
+  listContainer:
+  {
+    maxHeight: 200, overflow: 'auto', 
+    paddingTop: theme.spacing(1), 
+    paddingBottom: theme.spacing(5)
 
   }, 
   cardContent: {
@@ -87,15 +91,16 @@ export const useStyles = makeStyles((theme) => ({
  textAlign: "center", 
   paddingTop: theme.spacing(4)
   }, 
-  listContainer:
+  inputContainer:
   {
-    paddingLeft:theme.spacing(2), 
-    paddingRight:theme.spacing(2)
+    padding: theme.spacing(2)
+    
   }, 
   listItem:
   {
     background: grey[100], 
-    marginBottom: theme.spacing(1)
+    marginBottom: theme.spacing(2)
+   
   }, 
   displayCard: {
     position: "relative",
