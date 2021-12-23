@@ -20,7 +20,8 @@ import BlogGraph from "./BlogGraph";
 import Section3 from "./Section3";
 import { fakeArrayGenrator } from "../../../Common/fakeDataGenetator";
 import { PageHeader } from "../../../Common/Components";
-
+import Pagination from '@material-ui/lab/Pagination';
+import { NavLink } from "react-router-dom";
 const Dashboard = () => 
 {
   const classes = useStyles();
@@ -37,27 +38,36 @@ const Dashboard = () =>
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                     Student Name
                     </Typography>
                     <Typography>
                       This is a media card. You can use this section to describe the content.
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" component = {NavLink} to = "/blog">
                       View
                     </Button>
-                    <Button size="small" color="primary">
-                      Edit
-                    </Button>
+                    
                   </CardActions>
                 </Card>
+                
               </Grid>
+
+           
+
+           
            
 
 
       </Grid>
-
+      <Grid item xs = {12} justifyContent="center">
+         <div className={classes.pagination}>
+           <Pagination count={10} />
+         </div>
+      </Grid>
+      
+      
     </Container>
   ); 
 

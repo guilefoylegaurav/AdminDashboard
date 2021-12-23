@@ -107,10 +107,10 @@ export default function BlogPost() {
               </Grid>
               
               <div>
-                <TextField fullWidth id="outlined-basic" label="Outlined" variant="outlined" className={classes.courseForm} />
+                <TextField fullWidth id="outlined-basic" label="Course Code" variant="outlined" className={classes.courseForm} />
 
               
-                <TextField fullWidth id="outlined-basic" label="Outlined" variant="outlined" className={classes.courseForm} />
+                <TextField fullWidth id="outlined-basic" label="Course Name" variant="outlined" className={classes.courseForm} />
 
               </div>
               <Grid item xs={12}>

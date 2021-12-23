@@ -113,6 +113,7 @@ export const useStyles = makeStyles((theme) => ({
       height: "45px !important",
     },
   },
+  
   ratio: {
     position: "absolute",
     top: "50%",
@@ -146,4 +147,16 @@ export const useStyles = makeStyles((theme) => ({
     },
 
   },
+
+  pagination:
+  {
+    marginLeft: "20vh", 
+    
+    marginTop:"40vh", 
+    [theme.breakpoints.down("sm")]: {
+    marginLeft:"10vh", 
+    marginBottom:"10vh"
+    }
+    
+  }
 }));
